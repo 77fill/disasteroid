@@ -24,6 +24,7 @@ void login() {
           "Go",
           "Cancel");
           
+    var response = dispatcher.dispatch(new LoginRequestMessage(credentials.getUsername(), credentials.getPassword()));
     
   }
 }
